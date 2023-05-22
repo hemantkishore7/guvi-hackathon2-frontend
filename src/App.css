@@ -36,3 +36,82 @@
     transform: rotate(360deg);
   }
 }
+
+/* Booking page */
+.booking-page{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.seat{
+  background-color: #7f7f87;
+  height: 15px;
+  width: 18px;
+  margin: 3px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  margin: 8px;
+}
+
+.row{
+  display: flex;
+  
+}
+
+.seat.selected{
+  background-color: green;
+}
+
+.seat.occupied{
+  background-color: red;
+}
+
+.seat:nth-of-type(5){
+  margin-right: 28px;
+}
+
+.seat:not(.occupied):hover{
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.showcase .seat:not(.occupied):hover{
+  cursor: default;
+  transform: scale(1);
+}
+
+.showcase{
+  background-color: rgb(255, 255, 255);
+  padding: 5px 10px;
+  border-radius: 5px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.showcase li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  
+}
+
+.showcase li small{
+  margin-left: 10px;
+}
+
+.screen{
+  background-color:#7f7f87 ;
+  height: 20px;
+  width: 100%;
+  margin: 15px 0;
+  transform: rotateX(-40deg);
+  box-shadow: 0 3px 10px rgb(255, 255, 255,0.75);
+  text-align: center;
+  border-radius: 5px;
+}
