@@ -8,7 +8,7 @@ import { Provider } from 'react-redux';
 import {store }from "./Store"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-axios.defaults.baseURL="http://localhost:5001/"
+axios.defaults.baseURL="https://bookmyshow-clone-backend-m42z.onrender.com/"
 root.render(
   <React.StrictMode>
   <BrowserRouter>
